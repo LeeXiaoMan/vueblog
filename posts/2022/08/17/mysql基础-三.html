@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MySQL基础(3) | ALeeLee 的博客 ｜ ALeeLee Blog</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    <link rel="icon" href="/vueblog/favicon.ico">
+    <meta name="description" content="个人博客，前端开发">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/vueblog/assets/css/0.styles.13617540.css" as="style"><link rel="preload" href="/vueblog/assets/js/app.fdc44102.js" as="script"><link rel="preload" href="/vueblog/assets/js/8.890bf07c.js" as="script"><link rel="preload" href="/vueblog/assets/js/50.99b1935d.js" as="script"><link rel="prefetch" href="/vueblog/assets/js/10.ccfcf924.js"><link rel="prefetch" href="/vueblog/assets/js/11.fffff3ae.js"><link rel="prefetch" href="/vueblog/assets/js/12.b7c7a473.js"><link rel="prefetch" href="/vueblog/assets/js/13.bcdd9a69.js"><link rel="prefetch" href="/vueblog/assets/js/14.4ef60985.js"><link rel="prefetch" href="/vueblog/assets/js/15.eadc1f16.js"><link rel="prefetch" href="/vueblog/assets/js/16.8cd4ac1d.js"><link rel="prefetch" href="/vueblog/assets/js/17.4c6eb07c.js"><link rel="prefetch" href="/vueblog/assets/js/18.604dc414.js"><link rel="prefetch" href="/vueblog/assets/js/19.680333a9.js"><link rel="prefetch" href="/vueblog/assets/js/2.d2666a5a.js"><link rel="prefetch" href="/vueblog/assets/js/20.c1ac332d.js"><link rel="prefetch" href="/vueblog/assets/js/21.32d48dc9.js"><link rel="prefetch" href="/vueblog/assets/js/22.0b05bbff.js"><link rel="prefetch" href="/vueblog/assets/js/23.20dcf299.js"><link rel="prefetch" href="/vueblog/assets/js/24.797a5d9a.js"><link rel="prefetch" href="/vueblog/assets/js/25.41573d9b.js"><link rel="prefetch" href="/vueblog/assets/js/26.3416257d.js"><link rel="prefetch" href="/vueblog/assets/js/27.21655063.js"><link rel="prefetch" href="/vueblog/assets/js/28.e3172734.js"><link rel="prefetch" href="/vueblog/assets/js/29.ae073ac8.js"><link rel="prefetch" href="/vueblog/assets/js/3.db55bc90.js"><link rel="prefetch" href="/vueblog/assets/js/30.bff53c8b.js"><link rel="prefetch" href="/vueblog/assets/js/31.2a4354c1.js"><link rel="prefetch" href="/vueblog/assets/js/32.93ef2d63.js"><link rel="prefetch" href="/vueblog/assets/js/33.4e80798b.js"><link rel="prefetch" href="/vueblog/assets/js/34.86db27ea.js"><link rel="prefetch" href="/vueblog/assets/js/35.c2f6907a.js"><link rel="prefetch" href="/vueblog/assets/js/36.4e1d51bf.js"><link rel="prefetch" href="/vueblog/assets/js/37.e8703fc1.js"><link rel="prefetch" href="/vueblog/assets/js/38.009e7cf7.js"><link rel="prefetch" href="/vueblog/assets/js/39.14cddf42.js"><link rel="prefetch" href="/vueblog/assets/js/4.60c9c8ac.js"><link rel="prefetch" href="/vueblog/assets/js/40.8b66ecef.js"><link rel="prefetch" href="/vueblog/assets/js/41.4657fc0d.js"><link rel="prefetch" href="/vueblog/assets/js/42.1717e97e.js"><link rel="prefetch" href="/vueblog/assets/js/43.2c166830.js"><link rel="prefetch" href="/vueblog/assets/js/44.2a16ca95.js"><link rel="prefetch" href="/vueblog/assets/js/45.1a8cda16.js"><link rel="prefetch" href="/vueblog/assets/js/46.c3b8e30d.js"><link rel="prefetch" href="/vueblog/assets/js/47.aa4b7dc2.js"><link rel="prefetch" href="/vueblog/assets/js/48.2bcc3370.js"><link rel="prefetch" href="/vueblog/assets/js/49.8a32e349.js"><link rel="prefetch" href="/vueblog/assets/js/5.4216761d.js"><link rel="prefetch" href="/vueblog/assets/js/51.d3e4f00b.js"><link rel="prefetch" href="/vueblog/assets/js/52.4e0c21e1.js"><link rel="prefetch" href="/vueblog/assets/js/53.838e4e42.js"><link rel="prefetch" href="/vueblog/assets/js/54.2186c83c.js"><link rel="prefetch" href="/vueblog/assets/js/55.2acdd06f.js"><link rel="prefetch" href="/vueblog/assets/js/6.364979c9.js"><link rel="prefetch" href="/vueblog/assets/js/7.f092bbd1.js"><link rel="prefetch" href="/vueblog/assets/js/9.587698b9.js">
+    <link rel="stylesheet" href="/vueblog/assets/css/0.styles.13617540.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="global-layout" data-v-7f2e4136><header class="header-container" style="background-size:cover;background-repeat:no-repeat;background-position:center;background-attachment:scroll;background-image:url(../../../../../post-bg.jpeg);" data-v-93921ff8 data-v-7f2e4136><nav class="navbar" style="position:absolute;opacity:1;transition:all 0.5s ease-in-out;" data-v-93921ff8><a href="/vueblog/" class="navbar-link router-link-active">
+    ALeeLee Blog
+  </a> <ul class="navbar-links"><li><a href="/vueblog/" class="router-link-active">
+        HOME
+      </a></li><li><a href="/vueblog/about/">
+        ABOUT
+      </a></li><li><a href="/vueblog/tags/">
+        TAGS
+      </a></li></ul> <div id="nav-icon"><span></span><span></span><span></span></div></nav> <div class="header-title" data-v-93921ff8 data-v-93921ff8><h1 data-v-93921ff8>MySQL基础(3)</h1> <p data-v-93921ff8></p></div></header> <div class="container" data-v-b3fda33c data-v-7f2e4136><main class="main" style="width:60%;" data-v-b3fda33c><div class="post" data-v-b3fda33c data-v-b3fda33c><article class="main-div"><div class="post-content content content__default"><p>介绍MySQL的基础操作和指令。</p> <h2 id="多表查询"><a href="#多表查询" class="header-anchor">#</a> 多表查询</h2> <h3 id="多表关系"><a href="#多表关系" class="header-anchor">#</a> 多表关系</h3> <ul><li>一对多（多对一）</li> <li>多对多</li> <li>一对一</li></ul> <h4 id="一对多"><a href="#一对多" class="header-anchor">#</a> 一对多</h4> <p>案例：部门与员工
+关系：一个部门对应多个员工，一个员工对应一个部门
+实现：在多的一方建立外键，指向一的一方的主键</p> <h4 id="多对多"><a href="#多对多" class="header-anchor">#</a> 多对多</h4> <p>案例：学生与课程
+关系：一个学生可以选多门课程，一门课程也可以供多个学生选修
+实现：建立第三张中间表，中间表至少包含两个外键，分别关联两方主键</p> <h4 id="一对一"><a href="#一对一" class="header-anchor">#</a> 一对一</h4> <p>案例：用户与用户详情
+关系：一对一关系，多用于单表拆分，将一张表的基础字段放在一张表中，其他详情字段放在另一张表中，以提升操作效率
+实现：在任意一方加入外键，关联另外一方的主键，并且设置外键为唯一的（UNIQUE）</p> <h3 id="查询"><a href="#查询" class="header-anchor">#</a> 查询</h3> <p>合并查询（笛卡尔积，会展示所有组合结果）：
+<code>select * from employee, dept;</code></p> <blockquote><p>笛卡尔积：两个集合A集合和B集合的所有组合情况（在多表查询时，需要消除无效的笛卡尔积）</p></blockquote> <p>消除无效笛卡尔积：
+<code>select * from employee, dept where employee.dept = dept.id;</code></p> <h3 id="内连接查询"><a href="#内连接查询" class="header-anchor">#</a> 内连接查询</h3> <p>内连接查询的是两张表交集的部分</p> <p>隐式内连接：
+<code>SELECT 字段列表 FROM 表1, 表2 WHERE 条件 ...;</code></p> <p>显式内连接：
+<code>SELECT 字段列表 FROM 表1 [ INNER ] JOIN 表2 ON 连接条件 ...;</code></p> <p>显式性能比隐式高</p> <p>例子：</p> <div class="language-mysql extra-class"><pre class="language-text"><code>-- 查询员工姓名，及关联的部门的名称
+-- 隐式
+select e.name, d.name from employee as e, dept as d where e.dept = d.id;
+-- 显式
+select e.name, d.name from employee as e inner join dept as d on e.dept = d.id;
+</code></pre></div><h3 id="外连接查询"><a href="#外连接查询" class="header-anchor">#</a> 外连接查询</h3> <p>左外连接：
+查询左表所有数据，以及两张表交集部分数据
+<code>SELECT 字段列表 FROM 表1 LEFT [ OUTER ] JOIN 表2 ON 条件 ...;</code>
+相当于查询表1的所有数据，包含表1和表2交集部分数据</p> <p>右外连接：
+查询右表所有数据，以及两张表交集部分数据
+<code>SELECT 字段列表 FROM 表1 RIGHT [ OUTER ] JOIN 表2 ON 条件 ...;</code></p> <p>例子：</p> <div class="language-mysql extra-class"><pre class="language-text"><code>-- 左
+select e.*, d.name from employee as e left outer join dept as d on e.dept = d.id;
+select d.name, e.* from dept d left outer join emp e on e.dept = d.id;  -- 这条语句与下面的语句效果一样
+-- 右
+select d.name, e.* from employee as e right outer join dept as d on e.dept = d.id;
+</code></pre></div><p>左连接可以查询到没有dept的employee，右连接可以查询到没有employee的dept</p> <h3 id="自连接查询"><a href="#自连接查询" class="header-anchor">#</a> 自连接查询</h3> <p>当前表与自身的连接查询，自连接必须使用表别名</p> <p>语法：
+<code>SELECT 字段列表 FROM 表A 别名A JOIN 表A 别名B ON 条件 ...;</code></p> <p>自连接查询，可以是内连接查询，也可以是外连接查询</p> <p>例子：</p> <div class="language-mysql extra-class"><pre class="language-text"><code>-- 查询员工及其所属领导的名字
+select a.name, b.name from employee a, employee b where a.manager = b.id;
+-- 没有领导的也查询出来
+select a.name, b.name from employee a left join employee b on a.manager = b.id;
+</code></pre></div><h3 id="联合查询-union-union-all"><a href="#联合查询-union-union-all" class="header-anchor">#</a> 联合查询 union, union all</h3> <p>把多次查询的结果合并，形成一个新的查询集</p> <p>语法：</p> <div class="language-mysql extra-class"><pre class="language-text"><code>SELECT 字段列表 FROM 表A ...
+UNION [ALL]
+SELECT 字段列表 FROM 表B ...
+</code></pre></div><h4 id="注意事项"><a href="#注意事项" class="header-anchor">#</a> 注意事项</h4> <ul><li>UNION ALL 会有重复结果，UNION 不会</li> <li>联合查询比使用or效率高，不会使索引失效</li></ul> <h3 id="子查询"><a href="#子查询" class="header-anchor">#</a> 子查询</h3> <p>SQL语句中嵌套SELECT语句，称谓嵌套查询，又称子查询。
+<code>SELECT * FROM t1 WHERE column1 = ( SELECT column1 FROM t2);</code> <strong>子查询外部的语句可以是 INSERT / UPDATE / DELETE / SELECT 的任何一个</strong></p> <p>根据子查询结果可以分为：</p> <ul><li>标量子查询（子查询结果为单个值）</li> <li>列子查询（子查询结果为一列）</li> <li>行子查询（子查询结果为一行）</li> <li>表子查询（子查询结果为多行多列）</li></ul> <p>根据子查询位置可分为：</p> <ul><li>WHERE 之后</li> <li>FROM 之后</li> <li>SELECT 之后</li></ul> <h4 id="标量子查询"><a href="#标量子查询" class="header-anchor">#</a> 标量子查询</h4> <p>子查询返回的结果是单个值（数字、字符串、日期等）。
+常用操作符：- &lt; &gt; &gt; &gt;= &lt; &lt;=</p> <p>例子：</p> <div class="language-mysql extra-class"><pre class="language-text"><code>-- 查询销售部所有员工
+select id from dept where name = '销售部';
+-- 根据销售部部门ID，查询员工信息
+select * from employee where dept = 4;
+-- 合并（子查询）
+select * from employee where dept = (select id from dept where name = '销售部');
+
+-- 查询xxx入职之后的员工信息
+select * from employee where entrydate &gt; (select entrydate from employee where name = 'xxx');
+</code></pre></div><h4 id="列子查询"><a href="#列子查询" class="header-anchor">#</a> 列子查询</h4> <p>返回的结果是一列（可以是多行）。</p> <p>常用操作符：</p> <table><thead><tr><th>操作符</th> <th>描述</th></tr></thead> <tbody><tr><td>IN</td> <td>在指定的集合范围内，多选一</td></tr> <tr><td>NOT IN</td> <td>不在指定的集合范围内</td></tr> <tr><td>ANY</td> <td>子查询返回列表中，有任意一个满足即可</td></tr> <tr><td>SOME</td> <td>与ANY等同，使用SOME的地方都可以使用ANY</td></tr> <tr><td>ALL</td> <td>子查询返回列表的所有值都必须满足</td></tr></tbody></table> <p>例子：</p> <div class="language-mysql extra-class"><pre class="language-text"><code>-- 查询销售部和市场部的所有员工信息
+select * from employee where dept in (select id from dept where name = '销售部' or name = '市场部');
+-- 查询比财务部所有人工资都高的员工信息
+select * from employee where salary &gt; all(select salary from employee where dept = (select id from dept where name = '财务部'));
+-- 查询比研发部任意一人工资高的员工信息
+select * from employee where salary &gt; any (select salary from employee where dept = (select id from dept where name = '研发部'));
+</code></pre></div><h4 id="行子查询"><a href="#行子查询" class="header-anchor">#</a> 行子查询</h4> <p>返回的结果是一行（可以是多列）。
+常用操作符：=, &lt;, &gt;, IN, NOT IN</p> <p>例子：</p> <div class="language-mysql extra-class"><pre class="language-text"><code>-- 查询与xxx的薪资及直属领导相同的员工信息
+select * from employee where (salary, manager) = (12500, 1);
+select * from employee where (salary, manager) = (select salary, manager from employee where name = 'xxx');
+</code></pre></div><h4 id="表子查询"><a href="#表子查询" class="header-anchor">#</a> 表子查询</h4> <p>返回的结果是多行多列
+常用操作符：IN</p> <p>例子：</p> <div class="language-mysql extra-class"><pre class="language-text"><code>-- 查询与xxx1，xxx2的职位和薪资相同的员工
+select * from employee where (job, salary) in (select job, salary from employee where name = 'xxx1' or name = 'xxx2');
+-- 查询入职日期是2006-01-01之后的员工，及其部门信息
+select e.*, d.* from (select * from employee where entrydate &gt; '2006-01-01') as e left join dept as d on e.dept = d.id;
+</code></pre></div><h2 id="事务"><a href="#事务" class="header-anchor">#</a> 事务</h2> <p>事务是一组操作的集合，事务会把所有操作作为一个整体一起向系统提交或撤销操作请求，即这些操作要么同时成功，要么同时失败。</p> <p>基本操作：</p> <div class="language-mysql extra-class"><pre class="language-text"><code>-- 1. 查询张三账户余额
+select * from account where name = '张三';
+-- 2. 将张三账户余额-1000
+update account set money = money - 1000 where name = '张三';
+-- 此语句出错后张三钱减少但是李四钱没有增加
+模拟sql语句错误
+-- 3. 将李四账户余额+1000
+update account set money = money + 1000 where name = '李四';
+
+-- 查看事务提交方式
+SELECT @@AUTOCOMMIT;
+-- 设置事务提交方式，1为自动提交，0为手动提交，该设置只对当前会话有效
+SET @@AUTOCOMMIT = 0;
+-- 提交事务
+COMMIT;
+-- 回滚事务
+ROLLBACK;
+
+-- 设置手动提交后上面代码改为：
+select * from account where name = '张三';
+update account set money = money - 1000 where name = '张三';
+update account set money = money + 1000 where name = '李四';
+commit;
+</code></pre></div><p>操作方式二：</p> <p>开启事务：
+<code>START TRANSACTION 或 BEGIN TRANSACTION;</code>
+提交事务：
+<code>COMMIT;</code>
+回滚事务：
+<code>ROLLBACK;</code></p> <p>操作实例：</p> <div class="language-mysql extra-class"><pre class="language-text"><code>start transaction;
+select * from account where name = '张三';
+update account set money = money - 1000 where name = '张三';
+update account set money = money + 1000 where name = '李四';
+commit;
+</code></pre></div><h3 id="四大特性acid"><a href="#四大特性acid" class="header-anchor">#</a> 四大特性ACID</h3> <ul><li>原子性(Atomicity)：事务是不可分割的最小操作但愿，要么全部成功，要么全部失败</li> <li>一致性(Consistency)：事务完成时，必须使所有数据都保持一致状态</li> <li>隔离性(Isolation)：数据库系统提供的隔离机制，保证事务在不受外部并发操作影响的独立环境下运行</li> <li>持久性(Durability)：事务一旦提交或回滚，它对数据库中的数据的改变就是永久的</li></ul> <h3 id="并发事务"><a href="#并发事务" class="header-anchor">#</a> 并发事务</h3> <table><thead><tr><th>问题</th> <th>描述</th></tr></thead> <tbody><tr><td>脏读</td> <td>一个事务读到另一个事务还没提交的数据</td></tr> <tr><td>不可重复读</td> <td>一个事务先后读取同一条记录，但两次读取的数据不同</td></tr> <tr><td>幻读</td> <td>一个事务按照条件查询数据时，没有对应的数据行，但是再插入数据时，又发现这行数据已经存在</td></tr></tbody></table> <blockquote><p>这三个问题的详细演示：<a href="https://www.bilibili.com/video/BV1Kr4y1i7ru?p=55cd" target="_blank" rel="noopener noreferrer">https://www.bilibili.com/video/BV1Kr4y1i7ru?p=55cd<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote> <p>并发事务隔离级别：</p> <table><thead><tr><th>隔离级别</th> <th>脏读</th> <th>不可重复读</th> <th>幻读</th></tr></thead> <tbody><tr><td>Read uncommitted</td> <td>√</td> <td>√</td> <td>√</td></tr> <tr><td>Read committed</td> <td>×</td> <td>√</td> <td>√</td></tr> <tr><td>Repeatable Read(默认)</td> <td>×</td> <td>×</td> <td>√</td></tr> <tr><td>Serializable</td> <td>×</td> <td>×</td> <td>×</td></tr></tbody></table> <ul><li>√表示在当前隔离级别下该问题会出现</li> <li>Serializable 性能最低；Read uncommitted 性能最高，数据安全性最差</li></ul> <p>查看事务隔离级别：
+<code>SELECT @@TRANSACTION_ISOLATION;</code>
+设置事务隔离级别：
+<code>SET [ SESSION | GLOBAL ] TRANSACTION ISOLATION LEVEL {READ UNCOMMITTED | READ COMMITTED | REPEATABLE READ | SERIALIZABLE };</code>
+SESSION 是会话级别，表示只针对当前会话有效，GLOBAL 表示对所有会话有效</p></div></article> <!----></div></main> <aside class="aside" data-v-b3fda33c data-v-b3fda33c><div class="info-card main-div" data-v-1311ce9e data-v-b3fda33c><div class="info-card-header" style="background-size:cover;background-repeat:no-repeat;background-position:center;background-attachment:scroll;background-image:url(./avatar-bg.jpeg);" data-v-1311ce9e><img src="./avatar-top.jpg" alt="ALeeLee" class="info-avatar" data-v-1311ce9e></div> <div class="info-card-body" data-v-1311ce9e><section class="info-name" data-v-1311ce9e>
+      ALeeLee
+    </section> <section class="info-desc" data-v-1311ce9e>In me the tiger sniffs the rose<br/>心有猛虎，细嗅蔷薇</section> <section class="info-contact" data-v-1311ce9e><section data-v-1311ce9e><span data-v-1311ce9e data-v-1311ce9e><svg class="icon" style="font-size:1em;" data-v-1311ce9e data-v-1311ce9e><use xlink:href="#icon-location" data-v-1311ce9e data-v-1311ce9e></use></svg><span class="info-text" data-v-1311ce9e data-v-1311ce9e>
+          Chongqing, China
+        </span></span></section> <!----> <section data-v-1311ce9e><span data-v-1311ce9e data-v-1311ce9e><svg class="icon" style="font-size:1em;" data-v-1311ce9e data-v-1311ce9e><use xlink:href="#icon-email" data-v-1311ce9e data-v-1311ce9e></use></svg><span class="info-text" data-v-1311ce9e data-v-1311ce9e>
+          992120608@qq.com
+        </span></span></section></section></div> <div class="info-card-footer" data-v-1311ce9e><p class="footer-sns-link" data-v-1311ce9e><a target="_blank" class="sns-link" data-v-1311ce9e><span class="sns-icon" data-v-1311ce9e data-v-1311ce9e><svg class="icon" style="font-size:35px;" data-v-1311ce9e data-v-1311ce9e><use xlink:href="#icon-jianshu" data-v-1311ce9e data-v-1311ce9e></use></svg></span></a><a target="_blank" href="" class="sns-link" data-v-1311ce9e><span class="sns-icon" data-v-1311ce9e data-v-1311ce9e><svg class="icon" style="font-size:35px;" data-v-1311ce9e data-v-1311ce9e><use xlink:href="#icon-weibo" data-v-1311ce9e data-v-1311ce9e></use></svg></span></a><a target="_blank" class="sns-link" data-v-1311ce9e><span class="sns-icon" data-v-1311ce9e data-v-1311ce9e><svg class="icon" style="font-size:35px;" data-v-1311ce9e data-v-1311ce9e><use xlink:href="#icon-zhihu" data-v-1311ce9e data-v-1311ce9e></use></svg></span></a><a target="_blank" class="sns-link" data-v-1311ce9e><span class="sns-icon" data-v-1311ce9e data-v-1311ce9e><svg class="icon" style="font-size:35px;" data-v-1311ce9e data-v-1311ce9e><use xlink:href="#icon-github" data-v-1311ce9e data-v-1311ce9e></use></svg></span></a></p></div></div> <div class="post-toc main-div aside-toc" style="position:relative;top:0;width:0px;" data-v-b3fda33c><h4>- CATALOG</h4> <div class="post-nav-toc"><ul><li><a href="/vueblog/posts/2022/08/17/mysql%E5%9F%BA%E7%A1%80-%E4%B8%89.html#多表查询">多表查询</a><ul><li><a href="/vueblog/posts/2022/08/17/mysql%E5%9F%BA%E7%A1%80-%E4%B8%89.html#多表关系">多表关系</a></li><li><a href="/vueblog/posts/2022/08/17/mysql%E5%9F%BA%E7%A1%80-%E4%B8%89.html#查询">查询</a></li><li><a href="/vueblog/posts/2022/08/17/mysql%E5%9F%BA%E7%A1%80-%E4%B8%89.html#内连接查询">内连接查询</a></li><li><a href="/vueblog/posts/2022/08/17/mysql%E5%9F%BA%E7%A1%80-%E4%B8%89.html#外连接查询">外连接查询</a></li><li><a href="/vueblog/posts/2022/08/17/mysql%E5%9F%BA%E7%A1%80-%E4%B8%89.html#自连接查询">自连接查询</a></li><li><a href="/vueblog/posts/2022/08/17/mysql%E5%9F%BA%E7%A1%80-%E4%B8%89.html#联合查询-union-union-all">联合查询 union, union all</a></li><li><a href="/vueblog/posts/2022/08/17/mysql%E5%9F%BA%E7%A1%80-%E4%B8%89.html#子查询">子查询</a></li></ul></li><li><a href="/vueblog/posts/2022/08/17/mysql%E5%9F%BA%E7%A1%80-%E4%B8%89.html#事务">事务</a><ul><li><a href="/vueblog/posts/2022/08/17/mysql%E5%9F%BA%E7%A1%80-%E4%B8%89.html#四大特性acid">四大特性ACID</a></li><li><a href="/vueblog/posts/2022/08/17/mysql%E5%9F%BA%E7%A1%80-%E4%B8%89.html#并发事务">并发事务</a></li></ul></li></ul></div></div></aside></div> <footer class="footer" data-v-7f2e4136><p class="footer-sns-link"><a target="_blank" class="sns-link"><span class="sns-icon"><svg class="icon" style="font-size:40px;"><use xlink:href="#icon-jianshu"></use></svg></span></a><a target="_blank" href="" class="sns-link"><span class="sns-icon"><svg class="icon" style="font-size:40px;"><use xlink:href="#icon-weibo"></use></svg></span></a><a target="_blank" class="sns-link"><span class="sns-icon"><svg class="icon" style="font-size:40px;"><use xlink:href="#icon-zhihu"></use></svg></span></a><a target="_blank" class="sns-link"><span class="sns-icon"><svg class="icon" style="font-size:40px;"><use xlink:href="#icon-github"></use></svg></span></a></p> <div class="copyright"><span id="custom">Copyright &copy; ALeeLee Blog 2020 <br /> 
+      Theme By <a href="https://www.vuepress.cn/" target="_blank">VuePress</a>
+      | <a href="https://www.github.com/youdeliang/" target="_blank">youdeliang</a></span> <iframe frameborder="0" scrolling="0" width="80px" height="20px" class="footer-btn" style="margin-left: 2px; margin-bottom:-5px;"></iframe></div></footer></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/vueblog/assets/js/app.fdc44102.js" defer></script><script src="/vueblog/assets/js/8.890bf07c.js" defer></script><script src="/vueblog/assets/js/50.99b1935d.js" defer></script>
+  </body>
+</html>
